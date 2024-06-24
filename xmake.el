@@ -110,6 +110,7 @@
 ;;;###autoload
 (defun xmake-compile-commands ()
   "Run 'xmake project -k compile_commands' to generate compile_commands.json."
+  (interactive)
   (xmake-command "xmake project -k compile_commands"))
 
 (provide 'xmake)
